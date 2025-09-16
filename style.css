@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    font-family: monospace;
+    border-radius: 8px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+main {
+    padding: 3rem;
+}
+
+main h1 {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: inline-flex;
+    gap: 0.5rem;
+}
+
+nav a:hover {
+    background: #e7e6e6;
+}
+
+
+.image-caption {
+    display: flex;
+    align-items: center;
+    /* vertical alignment in the middle */
+    gap: 8px;
+    /* space between image and text */
+}
+
+
+.image-caption span {
+    font-size: 24px;
+}
+
+.search {
+    padding-top: 3rem;
+    display: flex;
+    gap: 1.5rem;
+    height: 2.5rem;
+}
+
+.search input {
+    flex: 0.9;
+    /* stretch to fill remaining space */
+}
+
+.search button {
+    flex: 0.1;
+    /* stretch to fill remaining space */
+}
+
+.search input,
+.search select {
+    background: rgb(243, 243, 245);
+    border: none;
+}
+
+input[type="text"]:focus {
+    outline: 1.5px solid #000;
+}
