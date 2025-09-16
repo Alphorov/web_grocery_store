@@ -11,14 +11,14 @@
 <body>
     <header>
         <div class="image-caption">
-            <img src="images/shop.png" width="32">
+            <img src="images/shop.png" width="46">
             <span>FreshMart</span>
         </div>
 
         <nav>
             <!-- Products page -->
-            <a href="index.html">Products</a>
             <!-- About us page -->
+            <a href="index.html" style="background-color: black; color: white">Products</a>
             <a href="about.html">About us</a>
             <!-- Basket page -->
             <a href="basket.html"><img src="images/basket.svg" width="20">Basket</a>
@@ -32,7 +32,10 @@
 
 
         <section class="search">
-            <input type="text" placeholder="Search for products...">
+            <div class="input-wrapper">
+                <img src="images/search.svg" alt="Search" class="prefix">
+                <input type="text" placeholder="Search products...">
+            </div>
             <select>
                 <option value="all">All categories</option>
                 <option value="fruits">Fruits</option>
@@ -43,6 +46,25 @@
             </select>
 
             <button>Search</button>
+        </section>
+
+        <p style="opacity: 0.5;">Showing 6 products</p>
+
+        <section class="products">
+
+
+            <article class="product-card">
+                <img src="images/product-image.jpeg" alt="Fresh organic tomatoes">
+                <div class="product-header">
+                    <h3 class="product-caption">Fresh Organic Tomatoes</h3>
+                    <p class="product-category">Vegetables</p>
+                </div>
+                <p class="product-description">Fresh, juicy organic tomatoes perfect for salads and cooking.</p>
+                <div class="product-footer">
+                    <span class="product-price">$3.99</span>
+                    <button class="add-to-basket">Add to Basket</button>
+                </div>
+            </article>
         </section>
 
 

@@ -11,6 +11,12 @@ header {
     border-bottom: 1px solid #ccc;
 }
 
+.image-caption span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    font-weight: 550;
+}
+
 main {
     padding: 3rem;
 }
@@ -47,34 +53,87 @@ nav a:hover {
     /* space between image and text */
 }
 
-
-.image-caption span {
-    font-size: 24px;
-}
-
 .search {
-    padding-top: 3rem;
+    display: flex;
+    padding: 3rem 0;
     display: flex;
     gap: 1.5rem;
     height: 2.5rem;
 }
 
-.search input {
+/* Input */
+
+.input-wrapper {
+    display: flex;
     flex: 0.9;
-    /* stretch to fill remaining space */
+    align-items: center;
+    background-color: rgb(243, 243, 245);
 }
+
+.input-wrapper .prefix {
+    width: 20px;
+    height: 20px;
+    margin: 0 6px;
+}
+
+.input-wrapper input {
+    border: none;
+    padding: 0;
+    height: 100%;
+    flex: 1;
+    background-color: rgb(243, 243, 245);
+}
+
+
+.input-wrapper:focus-within {
+    border-color: black;
+    /* green border */
+    box-shadow: 0 0 5px rgba(70, 70, 70, 0.5);
+    /* subtle glow */
+}
+
+.search input[type="text"]:focus {
+    outline: none;
+}
+
+/* Button */
 
 .search button {
     flex: 0.1;
-    /* stretch to fill remaining space */
+    border: none;
+    background-color: #000;
+    color: white;
 }
 
-.search input,
+/* Select */
+
 .search select {
-    background: rgb(243, 243, 245);
+    background-color: rgb(243, 243, 245);
+    padding: 0 1.5rem;
     border: none;
 }
 
-input[type="text"]:focus {
-    outline: 1.5px solid #000;
+.products {
+    padding-top: 1.5rem;
+}
+
+/* Product card */
+
+.product-card {
+    border: 1px solid gray;
+    padding: 1.5rem;
+    width: 300px;
+
+}
+
+.product-card img {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.product-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
 }
