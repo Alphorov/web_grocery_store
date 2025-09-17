@@ -21,9 +21,10 @@ main {
     padding: 2rem 8rem;
 }
 
-main h1 {
+h1,
+h2 {
     margin-bottom: 1rem;
-    font-weight: 500;
+    font-weight: 550;
 }
 
 nav {
@@ -187,4 +188,55 @@ nav a.active:hover {
 .product-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.about {
+    text-align: center;
+}
+
+.about p {
+    font-size: 18px;
+    opacity: 0.6;
+    line-height: 1.6;
+    padding: 0 15%;
+}
+
+.about-tiles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 4rem 0;
+}
+
+.about-tile {
+    display: flex;
+    align-items: flex-start;
+
+    padding: 1rem;
+
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+    max-width: 400px;
+    /* optional */
+}
+
+/* Icon styling */
+.about-tile img {
+
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    /* green tint if you use inline SVG */
+}
+
+.about-description {
+    text-align: left;
+    padding: 0.65rem 0.5rem 0.5rem 0.6rem;
+}
+
+.about-description p {
+    padding: 0;
 }
