@@ -45,6 +45,21 @@ nav a:hover {
     background: #e7e6e6;
 }
 
+nav a.active {
+    background-color: black;
+    color: white
+}
+
+nav a.active img {
+    filter: invert(1);
+}
+
+
+nav a.active:hover {
+    background-color: black;
+    color: white;
+}
+
 
 .image-caption {
     display: flex;
