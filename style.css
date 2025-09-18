@@ -240,3 +240,35 @@ nav a.active:hover {
 .about-description p {
     padding: 0;
 }
+
+.story-contact {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 4rem;
+    gap: 2rem;
+}
+
+.story {
+    flex: 0.9;
+    text-align: left;
+}
+
+.contact {
+    background-color: #e3e3e3;
+    text-align: left;
+    padding: 4rem 2rem;
+
+}
+
+
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.story-contact p {
+    padding: 0;
+}
